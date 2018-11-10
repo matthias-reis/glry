@@ -1,8 +1,0 @@
-{
-  "name": "flickr2gphoto",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:matthias-reis/flickr2gphoto.git",
-  "author": "Matthias Reis <matthias.reis@xing.com>",
-  "license": "MIT"
-}

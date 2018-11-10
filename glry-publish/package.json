@@ -1,0 +1,24 @@
+{
+  "name": "glry-publish",
+  "version": "1.0.0",
+  "bin": {
+    "glry": "./bin/glry.js"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:matthias-reis/glry.git",
+  "author": "Matthias Reis <matthias.reis@xing.com>",
+  "license": "MIT",
+  "scripts": {
+    "glry": "GOOGLE_APPLICATION_CREDENTIALS='./Cardamonchai-26275216fcd3.json' node ./bin/glry",
+    "transform": "GOOGLE_APPLICATION_CREDENTIALS='./Cardamonchai-26275216fcd3.json' node ./transformer ./example"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.2.0",
+    "chalk": "^2.4.1",
+    "glob": "^7.1.3",
+    "lodash": "^4.17.11",
+    "node-fetch": "^2.2.0",
+    "rimraf": "^2.6.2",
+    "sharp": "^0.21.0"
+  }
+}

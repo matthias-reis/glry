@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  font-size: 100px;
+}
+.glry-container {
+  padding: 40px;
+  background: linear-gradient(
+    135deg,
+    hsla(180, 5%, 20%) 0%,
+    hsla(180, 5%, 40%) 50%,
+    hsla(180, 5%, 20%) 100%
+  );
+  /* background: #fff; */
+}
