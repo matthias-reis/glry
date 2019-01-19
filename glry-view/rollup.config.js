@@ -8,15 +8,15 @@ import minify from 'rollup-plugin-babel-minify';
 export default {
   input: './glry.js',
   output: {
-    file: './glry.min.js',
+    file: './glry.dist.js',
     format: 'iife',
   },
-  sourceMap: true,
+  // sourceMap: true,
   plugins: [
     resolve(),
-    sourcemaps(),
     babel({
       exclude: 'node_modules/**', // only transpile our source code
+      runtimeHelpers: true,
     }),
     alias({
       react: path.resolve(
@@ -34,6 +34,6 @@ export default {
         'preact-compat.es.js'
       ),
     }),
-    minify(),
+    // minify(),
   ],
 };

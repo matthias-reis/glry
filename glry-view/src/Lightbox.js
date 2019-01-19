@@ -24,7 +24,7 @@ class Lightbox extends Component {
       console.log('removing listener');
       document.removeEventListener('keydown', this.handleKey, false);
       this.hasEventListener = false;
-    }
+    
   }
 
   handleKey = ev => {

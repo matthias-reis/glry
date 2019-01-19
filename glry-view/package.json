@@ -1,33 +1,30 @@
 {
   "name": "glry-view",
   "version": "1.0.0",
-  "main": "glry.js",
+  "main": "./glry.js",
   "repository": "git@github.com:matthias-reis/glry.git",
   "author": "Matthias Reis <matthias.reis@xing.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js"
+    "build": "parcel build ./glry.js"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-external-helpers": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-transform-regenerator": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "parcel": "^1.10.3",
     "preact": "^8.3.1",
     "preact-compat": "^3.18.4",
-    "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-babel-minify": "^6.1.1",
-    "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-sourcemaps": "^0.4.2",
     "whatwg-fetch": "^3.0.0"
-  },
-  "devDependencies": {
-    "rollup-plugin-alias": "^1.4.0"
   }
 }

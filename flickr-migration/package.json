@@ -1,0 +1,19 @@
+{
+  "name": "flickr-migration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consolidate.js",
+  "scripts": {
+    "consolidate": "node ./consolidate",
+    "google": "node ./google"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "glob": "^7.1.3",
+    "google-auth-library": "^2.0.1",
+    "googleapis": "^35.0.0"
+  }
+}

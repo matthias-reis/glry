@@ -1,7 +1,12 @@
 import { h } from 'preact';
 
 const Close = () => (
-  <svg width="32" height="32" viewBox="0 0 48 48">
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
     <path
       fill="#fff"
       d="M24 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zM24 43.5c-10.77 0-19.5-8.73-19.5-19.5s8.73-19.5 19.5-19.5 19.5 8.73 19.5 19.5-8.73 19.5-19.5 19.5z"
@@ -14,7 +19,12 @@ const Close = () => (
 );
 
 const Left = () => (
-  <svg width="32" height="32" viewBox="0 0 48 48">
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
     <path
       fill="#fff"
       d="M24 48c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24zM24 4.5c10.77 0 19.5 8.73 19.5 19.5s-8.73 19.5-19.5 19.5-19.5-8.73-19.5-19.5 8.73-19.5 19.5-19.5z"
@@ -27,7 +37,12 @@ const Left = () => (
 );
 
 const Right = () => (
-  <svg width="32" height="32" viewBox="0 0 48 48">
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
     <path
       fill="#fff"
       d="M24 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zM24 43.5c-10.77 0-19.5-8.73-19.5-19.5s8.73-19.5 19.5-19.5 19.5 8.73 19.5 19.5-8.73 19.5-19.5 19.5z"
@@ -41,7 +56,12 @@ const Right = () => (
 
 const Loader = ({ className = '', color }) => {
   return (
-    <svg className={className} viewBox="0 0 140 64" fill={color}>
+    <svg
+      className={className}
+      viewBox="0 0 140 64"
+      fill={color}
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1">
       <path
         d="M30.262 57.02L7.195 40.723c-5.84-3.976-7.56-12.06-3.842-18.063 3.715-6 11.467-7.65 17.306-3.68l4.52 3.76 2.6-5.274c3.717-6.002 11.47-7.65 17.305-3.68 5.84 3.97 7.56 12.054 3.842 18.062L34.49 56.118c-.897 1.512-2.793 1.915-4.228.9z"
         fillOpacity=".5">

@@ -9,8 +9,7 @@
   "author": "Matthias Reis <matthias.reis@xing.com>",
   "license": "MIT",
   "scripts": {
-    "glry": "GOOGLE_APPLICATION_CREDENTIALS='./Cardamonchai-26275216fcd3.json' node ./bin/glry",
-    "transform": "GOOGLE_APPLICATION_CREDENTIALS='./Cardamonchai-26275216fcd3.json' node ./transformer ./example"
+    "glry": "GOOGLE_APPLICATION_CREDENTIALS='./cardamonchai-220814-3e0825771557.json' node ./bin/glry"
   },
   "dependencies": {
     "@google-cloud/storage": "^2.2.0",
