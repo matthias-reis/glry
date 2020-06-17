@@ -13,7 +13,23 @@ class Glry extends Component {
           this.props.id
         }/index.json`
       );
-      const { images } = await res.json();
+      let { images } = await res.json();
+      if (this.props.id.indexOf('flickr/') === 0) {
+        images = images.map(image => ({
+          s: image.s.replace(
+            'cardamonchai-galleries',
+            'cardamonchai-galleries/flickr'
+          ),
+          m: image.m.replace(
+            'cardamonchai-galleries',
+            'cardamonchai-galleries/flickr'
+          ),
+          l: image.l.replace(
+            'cardamonchai-galleries',
+            'cardamonchai-galleries/flickr'
+          ),
+        }));
+      }
       this.setState({ images });
     } catch (e) {
       console.error(e);
